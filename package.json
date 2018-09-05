@@ -1,0 +1,22 @@
+{
+  "name": "mfp-cli",
+  "version": "1.0.4",
+  "description": "my first package cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "suiga <wyw1121@live.com>",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "commander": "^2.17.1"
+  },
+  "bin": {
+    "mfp": "./bin/mfp.js"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "colors": "^1.3.2"
+  }
+}
