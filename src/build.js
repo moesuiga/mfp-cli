@@ -16,9 +16,15 @@ colors.setTheme({
 const root = process.cwd();
 
 function compiler(src, output = 'dist') {
+  console.log(src)
   src = path.join(src);
   const srcPath = path.join(root, src)
   const distPath = path.join(root, output);
+
+  if (!fs.existsSync(srcPath)) {
+    console.log('PathError: ', colors.red(`[${srcPath}] is not exists.`));
+    return;
+  }
 
   const srcStat = fs.statSync(srcPath);
 

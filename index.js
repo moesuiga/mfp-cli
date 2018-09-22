@@ -1,1 +1,1 @@
-require('./bin/mfp.js')
+require('./bin/mfp.js');
